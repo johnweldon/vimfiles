@@ -1,5 +1,5 @@
 " Vim color file
-" Maintainer: Niklas Lindström <nlm@valtech.se>
+" Maintainer: Niklas LindstrÃ¶m <nlm@valtech.se>
 " Last Change: 2002-03-22
 " Version: 0.3
 " URI: http://localhost/

@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:   Zhang Jing
-" Last Change:  %[% 2005年12月07日 星期三 10时41分49秒 %]%
+" Last Change:  %[% 2005脛锚12脭脗07脠脮 脨脟脝脷脠媒 10脢卤41路脰49脙毛 %]%
 
 set background=dark
 if version > 580
