@@ -23,5 +23,5 @@ function! s:Format()
 	call setpos('.', pos)
 endfunction
 
-command -nargs=0 Format :call s:Format()
+command! -nargs=0 Format :call s:Format()
 
