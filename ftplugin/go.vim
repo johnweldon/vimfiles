@@ -13,3 +13,5 @@ let b:did_ftplugin = 1
 
 map <buffer> <silent> ,r :%! gofmt <cr>
 map <buffer> <silent> ,m :%! gd . <cr>
+
+se makeprg=go
