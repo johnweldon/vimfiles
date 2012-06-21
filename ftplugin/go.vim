@@ -11,7 +11,7 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
-map <buffer> <silent> ,r :%! gofmt <cr>
-map <buffer> <silent> ,m :%! gd . <cr>
 
 se makeprg=go
+nmap <buffer> <LocalLeader>r :Fmt<cr>
+
