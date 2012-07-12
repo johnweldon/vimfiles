@@ -21,7 +21,7 @@ function! s:Format()
 	silent update
 	silent! %s/{%/<? &/g
 	silent! %s/%}/& ?>/g
-	silent %!tidy -config ~/.tidyxhtml
+	silent %!tidy -config ~/.tidycf
 	silent! %s/<? {%/{%/g
 	silent! %s/%} ?>/%}/g
 	call setpos('.', pos)
