@@ -15,3 +15,4 @@ let b:did_ftplugin = 1
 se makeprg=go
 nmap <buffer> <LocalLeader>r :Fmt<cr>
 
+setlocal omnifunc=gocomplete#Complete
