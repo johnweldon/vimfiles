@@ -9,5 +9,6 @@
     au! BufNewFile,BufRead *.msbuild                 setf xml
     au! BufNewFile,BufRead *.less                    setf sass
     au! BufNewFile,BufRead *.fs,*.fsx                setf fs
+    au! BufNewFile,BufRead *.gv                      setf dot
     au! BufNewFile,BufRead [0-9]\{4\}-[0-9][0-9]-[0-9][0-9].log      setf log
   augroup END
