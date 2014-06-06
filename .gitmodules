@@ -1,15 +1,21 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
+	url = git@github.com:tpope/vim-pathogen.git
 [submodule "bundle/color_sampler_pack"]
 	path = bundle/color_sampler_pack
-	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
+	url = git@github.com:vim-scripts/Color-Sampler-Pack.git
 [submodule "bundle/markdown"]
 	path = bundle/markdown
-	url = https://github.com/vim-scripts/Markdown.git
+	url = git@github.com:vim-scripts/Markdown.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/vim-godef"]
 	path = bundle/vim-godef
-	url = https://github.com/dgryski/vim-godef
+	url = git@github.com:dgryski/vim-godef
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:fatih/vim-go
+[submodule "bundle/youcompleteme"]
+	path = bundle/youcompleteme
+	url = git@github.com:valloric/youcompleteme
