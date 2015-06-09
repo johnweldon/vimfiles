@@ -1,5 +1,5 @@
-" XML filetype plugin file
-" Language:	xml
+" JSON filetype plugin file
+" Language:	JSON
 " Maintainer:	John Weldon <johnweldon4@gmail.com>
 " Version: 1.0
 
@@ -11,8 +11,8 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
-nmap <buffer> <LocalLeader>r <Plug>FormatXML
-nmap <buffer> <script> <Plug>FormatXML <SID>Format
+nmap <buffer> <LocalLeader>r <Plug>FormatJSON
+nmap <buffer> <script> <Plug>FormatJSON <SID>Format
 nmenu <script> Plugin.Format\ XML <SID>Format
 nmap <SID>Format :call <SID>Format()<CR>
 
