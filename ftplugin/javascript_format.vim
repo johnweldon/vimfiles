@@ -1,5 +1,5 @@
-" Vim ftplugin for using astyle to format javascript
-" Last Change: 2015 Sep 5
+" Vim ftplugin for using js-beautify to format javascript
+" Last Change: 2015 Sep 15
 " Maintainer: John Weldon <johnweldon4@gmail.com>
 " License: public domain
 
@@ -19,8 +19,9 @@ nmap <SID>Format :call <SID>FormatJavascript()<CR>
 function! s:FormatJavascript()
   let pos = getpos('.')
   silent update
-  silent %!js-beautify -j -s 2 -b "collapse" --no-preserve-newlines -f -
+  silent %!js-beautify -j -s 2 -n -p -m 2 -f -
   call setpos('.', pos)
 endfunction
 
 command! -nargs=0 Format :call s:FormatJavascript()
+

@@ -19,18 +19,9 @@ nmap <SID>Format :call <SID>Format()<CR>
 function! s:Format()
 	let pos = getpos('.')
 	silent update
-	silent! %s/{%/<? &/g
-	silent! %s/%}/& ?>/g
-	silent! %s/{{/<? &/g
-	silent! %s/}}/& ?>/g
-	silent %!tidy -config ~/.tidycf
-	silent! %s/<? {{/{{/g
-	silent! %s/}} ?>/}}/g
-	silent! %s/<? {%/{%/g
-	silent! %s/%} ?>/%}/g
+	silent %!html-beautify --type "html" -s 2 -n -p -m 2 -f -
 	call setpos('.', pos)
 endfunction
 
 
 command! -nargs=0 Format :call s:Format()
-
