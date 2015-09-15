@@ -19,9 +19,8 @@ nmap <SID>Format :call <SID>FormatJavascript()<CR>
 function! s:FormatJavascript()
   let pos = getpos('.')
   silent update
-  silent %!js-beautify --stdin --jslint-happy --indent-size=2 --brace-style=collapse --disable-preserve-newlines
+  silent %!js-beautify -j -s 2 -b "collapse" --no-preserve-newlines -f -
   call setpos('.', pos)
 endfunction
 
 command! -nargs=0 Format :call s:FormatJavascript()
-
