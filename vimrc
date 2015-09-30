@@ -59,7 +59,7 @@ set sidescrolloff=5
 set showbreak=\ \ +\  
 set linebreak
 set colorcolumn=+1,+2,+3,+4
-set statusline=[%n]\ %<%f\ %h%m%r\ %q%=\ 0x%B\ %b\ \ \ %-14.(%l,%c%V%)\ %o\ %P
+set statusline=[%n]\ %<%f\ %{fugitive#statusline()}\ %h%m%r\ %q%=\ 0x%B\ %b\ \ \ %-14.(%l,%c%V%)\ %o\ %P
 
 hi IncSearch cterm=NONE ctermbg=3 ctermfg=0
 hi Search cterm=NONE ctermbg=22 ctermfg=15
@@ -99,6 +99,8 @@ let g:godef_split=0
 let g:godef_same_file_in_same_window=1
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 set nocursorline
 set synmaxcol=200
