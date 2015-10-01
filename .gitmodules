@@ -2,27 +2,39 @@
 	path = bundle/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
 	update = rebase
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = git@github.com:vim-scripts/Markdown.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = git@github.com:tpope/vim-sensible.git
 	update = rebase
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
-	update = rebase
-[submodule "bundle/vim-godef"]
-	path = bundle/vim-godef
-	url = git@github.com:dgryski/vim-godef
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
 	update = rebase
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go
 	update = rebase
+[submodule "bundle/vim-godef"]
+	path = bundle/vim-godef
+	url = git@github.com:dgryski/vim-godef
+	update = rebase
 [submodule "bundle/youcompleteme"]
 	path = bundle/youcompleteme
 	url = git@github.com:valloric/youcompleteme
 	update = rebase
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+	update = rebase
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = gh:scrooloose/nerdtree
+	url = git@github.com:scrooloose/nerdtree
+	update = rebase
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = git@github.com:vim-scripts/Markdown.git
+	update = rebase
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
 	update = rebase
