@@ -66,9 +66,6 @@ hi Search cterm=NONE ctermbg=22 ctermfg=15
 hi LineNr cterm=NONE ctermbg=17 ctermfg=1
 hi ColorColumn cterm=NONE ctermbg=17 ctermfg=white guibg=darkblue guifg=white
 
-set formatprg=indent
-set grepprg=grep\ -n
-set tags=./tags
 set viminfo=""
 
 set matchpairs+=<:>
@@ -82,16 +79,6 @@ filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 
-if has("win32")
-    set makeprg=nmake
-else
-    set makeprg=make
-endif
-
-if version >= 700
-    set diffopt=vertical
-endif
-
 
 let c_comment_strings=1
 
@@ -103,7 +90,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 set nocursorline
-set synmaxcol=200
+set synmaxcol=500
 syntax on
 
 vmap <silent> <F6> :!sort<CR>
